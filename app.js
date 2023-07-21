@@ -32,15 +32,15 @@ function addButtonErrors()
 {
     error.classList.remove("display-none")
     buttons.forEach(btn => {
-        btn.classList.add("error")
+        btn.classList.add("ratingError")
     })
 }
 
 function removeButtonErrors()
 {
-    error.classList.add("d-none")
+    error.classList.add("display-none")
     buttons.forEach(btn => {
-        btn.classList.remove("error")
+        btn.classList.remove("ratingError")
     })
 }
 

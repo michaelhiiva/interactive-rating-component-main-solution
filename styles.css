@@ -73,6 +73,16 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.starImg {
+  width: 3rem;
+  height: 3rem;
+  padding: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  background-color: #3a4655;
+  border-radius: 50%;
+}
+
 .selectionMsg {
   padding-top: 1.5rem;
   padding-bottom: 1.25rem;
@@ -87,6 +97,7 @@ body {
   width: 3rem;
   height: 3rem;
   font-size: 1.125rem;
+  font-weight: bold;
   border-radius: 50%;
   border: 0;
   background-color: var(--color-light-grey);
@@ -101,6 +112,10 @@ body {
   border-radius: 45%;
   background-color: #fb7413;
   color: var(--color-white);
+}
+
+button.ratingError {
+  border: .125em solid red;
 }
 
 .submitBtn {
