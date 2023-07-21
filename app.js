@@ -1,3 +1,5 @@
+// Code largely based off 
+// https://github.com/christianArk/interactive-rating-component/blob/master/scripts/review.js
 const buttons = document.querySelectorAll(".ratingButtons button");
 const submit = document.getElementById("submitBtn");
 const error = document.getElementById("errorMsg");
