@@ -1,0 +1,128 @@
+:root {
+  --color-white:  hsl(0, 0%, 100%);
+  --color-light-grey: hsl(217, 12%, 63%);
+  --color-medium-grey: hsl(216, 12%, 54%);
+  --color-dark-blue: hsl(213, 19%, 18%);
+  --color-background-body: #121417;
+}
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  background-color: var(--color-background-body);
+}
+
+.container {
+  background-color: var(--color-dark-blue);
+  padding: 1.5rem;
+  border-radius: 2rem;
+  max-width: 25rem;
+}
+
+.container p,
+.attribution,
+.selectionMsg {
+  color: var(--color-light-grey);
+  padding-top: .850rem;
+  padding-bottom: 1.5rem;
+}
+
+.selectionMsg {
+  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.ratingButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratingButtons button {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.125rem;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--color-light-grey);
+  color: var(--color-dark-blue);
+}
+
+.ratingButtons button:hover {
+  border-radius: 45%;
+}
+
+.ratingButtons .selected {
+  border-radius: 45%;
+  background-color: #fb7413;
+  color: var(--color-white);
+}
+
+.submitBtn {
+  background-color: #fb7413;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  border: 0;
+  border-radius: 1.25rem;
+  color: var(--color-white);
+  margin: 1rem 0;
+  padding: .125rem;
+}
+
+.submitBtn:hover {
+  border-radius: 1rem;
+}
+
+.title {
+  color: var(--color-white);
+}
+
+.display-none {
+  display: none;
+}
